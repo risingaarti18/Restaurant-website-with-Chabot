@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanha's Restaurant</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chat.css">
+
+</head>
+<body>
+    <!----chatbot starts---->
+<!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Connect with us!
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: #222;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()">►</i>
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+<!----chatbot end---->
+
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"><i class="fas fa-utensils"></i>Kanha's Restaurant</a>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#popular">popular</a>
+        <a href="#speciality">speciality</a>
+        <a href="#gallery">gallery</a>
+        <a href="#review">review</a>
+        <a href="#order">order</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content1">
+        <h3>Food made with love</h3>
+        <p>"Never underestimate the power of good food. Eating delicious food can be a life-changing experience  "</p>
+        <a href="#order" class="btn">order now</a>
+    </div>
+
+    <div class="image">
+        <img src="images/mp.png" alt="">
+    </div>
+</section>
+
+<!-- home section ends -->
+
+
+
+
+<!-- popular section starts  -->
+
+<section class="popular" id="popular">
+
+    <h1 class="heading"> most <span>popular</span> foods </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <span class="price"> ₹35 - ₹150 </span>
+            <img src="images/p-1.jpg" alt="">
+            <h3>Burgers</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#order" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price"> ₹250 - ₹5000 </span>
+            <img src="images/p-2.jpg" alt="">
+            <h3>Cakes</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#order" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price"> ₹20 - ₹300 </span>
+            <img src="images/p-3.jpg" alt="">
+            <h3>Sweets & Namkeens</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#order" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price"> ₹30 - ₹200 </span>
+            <img src="images/p-4.jpg" alt="">
+            <h3>Cupcakes</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#order" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price"> ₹50 - ₹251 </span>
+            <img src="images/p-5.jpg" alt="">
+            <h3>Cold Drinks</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#order" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price"> ₹20 - ₹299 </span>
+            <img src="images/p-6.jpg" alt="">
+            <h3>Ice-Creams</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#order" class="btn">order now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- popular section ends -->
+
+<!-- steps section starts  -->
+
+<div class="step-container">
+
+    <h1 class="heading">how it <span>works</span></h1>
+
+    <section class="steps">
+
+        <div class="box">
+            <img src="images/step-1.jpg" alt="">
+            <h3>choose your favorite food</h3>
+        </div>
+        <div class="box">
+            <img src="images/step-2.jpg" alt="">
+            <h3>free and fast delivery</h3>
+        </div>
+        <div class="box">
+            <img src="images/step-3.jpg" alt="">
+            <h3>easy payments methods</h3>
+        </div>
+        <div class="box">
+            <img src="images/step-4.jpg" alt="">
+            <h3>and finally, enjoy your food</h3>
+        </div>
+    
+    </section>
+
+</div>
+
+<!-- steps section ends -->
+
+<!-- speciality section starts -->
+
+<section class="speciality" id="speciality">
+
+    <h1 class="heading"> our <span>speciality</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img class="image" src="images/s-img-1.jpg" alt="">
+            <div class="content1">
+                <img src="images/s-1.png" alt="">
+                <h3>tasty burger</h3>
+                <p>Stuffed Bean Burger, Supreme Veggie Burger, Butter Chicken Twin Burgers, Rajma Patty Burger.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/s-img-2.jpg" alt="">
+            <div class="content1">
+                <img src="images/s-2.png" alt="">
+                <h3>tasty pizza</h3>
+                <p>Margherita,Double Cheese Margherita,Farm House,Peppy Paneer, Deluxe Veggie.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/s-img-3.jpg" alt="">
+            <div class="content1">
+                <img src="images/s-3.png" alt="">
+                <h3>ice-cream</h3>
+                <p>Vanilla, Matcha, Chocolate, Strawberry, Banana, Mango, Oreo</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/s-img-4.jpg" alt="">
+            <div class="content1">
+                <img src="images/s-4.png" alt="">
+                <h3>cold drinks</h3>
+                <p>Coca- Cola, Pepsi, Diet Coke, Dr. Pepper, Mountain Dew, Sprite, Diet Pepsi, Coke Zero, Fanta.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/s-img-5.jpg" alt="">
+            <div class="content1">
+                <img src="images/s-5.png" alt="">
+                <h3>tasty sweets</h3>
+                <p>Gulab Jamun, Gajar Pak, Modak, Sandesh, Aam Shrikhand, Rasmalai, Kaju Katli, Payasam.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/s-img-6.jpg" alt="">
+            <div class="content1">
+                <img src="images/s-6.png" alt="">
+                <h3>healty breakfast</h3>
+                <p>Oats Idli, Dal Paratha, Methi Thepla, Moong dal chila, Rawa Upma, Uttapam, Poha.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- speciality section ends -->
+
+
+
+
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading"> our food <span> gallery </span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/g-1.jpg" alt="">
+            <div class="content1">
+                <h3>North Indian</h3>
+                <p>Rajasthani Thali, Punjabi Thali, Karahi Paneer, Shahi Paneer, Mix Veg etc.</p>
+                <a href="file:///C:/Users/user/OneDrive/Desktop/Project%207th%20sem/RESTAURENT%20WEBSITE/northindian.html" class="btn">order now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-2.jpg" alt="">
+            <div class="content1">
+                <h3>South Indian</h3>
+                <p> Thali, Idli Sambar, Paneer Dosa, Hydrabadi Biryani,Medu Vada, Upma etc.</p>
+                <a href="file:///C:/Users/user/OneDrive/Desktop/Project%207th%20sem/RESTAURENT%20WEBSITE/southindian.html" class="btn">order now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-3.jpg" alt="">
+            <div class="content1">
+                <h3> Fast Food</h3>
+                <p>Egg Rolls, Chicken Rolls, Mutton Rolls, Veg Rolls, Tandoori Veg Rolls etc.</p>
+                <a href="file:///C:/Users/user/OneDrive/Desktop/Project%207th%20sem/RESTAURENT%20WEBSITE/fastfood.html" class="btn">order now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-4.jpg" alt="">
+            <div class="content1">
+                <h3>Desserts</h3>
+                <p>Brownie,Cheesecakes,Pudding, Pie, Teacake,Chocolate- coconut and cherry sponge etc.</p>
+                <a href="file:///C:/Users/user/OneDrive/Desktop/Project%207th%20sem/RESTAURENT%20WEBSITE/desserts.html" class="btn">order now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-5.jpg" alt="">
+            <div class="content1">
+                <h3>Halwa</h3>
+                <p>Aalu Halwa, Moong Dal Halwa, Gheeya Halwa, Gajar Pak, Gund Pak etc.</p>
+                <a href="file:///C:/Users/user/OneDrive/Desktop/Project%207th%20sem/RESTAURENT%20WEBSITE/halwa.html" class="btn">order now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-6.jpg" alt="">
+            <div class="content1">
+                <h3>Mithai</h3>
+                <p>Rasgulla, Chamcham, Kheer Mohan, Raj Bhog, Gulab Jamun,Kaju Katli etc.</p>
+                <a href="file:///C:/Users/user/OneDrive/Desktop/Project%207th%20sem/RESTAURENT%20WEBSITE/mithai.html" class="btn">order now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-7.jpg" alt="">
+            <div class="content1">
+                <h3>Beverages</h3>
+                <p>Masal Chai, Aam Panha, Chaach,Lassi, Jaljeera,Mahua,Fenny etc.</p>
+                <a href="file:///C:/Users/user/OneDrive/Desktop/Project%207th%20sem/RESTAURENT%20WEBSITE/beverages.html" class="btn">order now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-8.jpg" alt="">
+            <div class="content1">
+                <h3>Street Food</h3>
+                <p>Panipuri,Samosa,Kachori,Chole Bhature,Aalu Tikki,Chole Kulche,Pakoda etc.</p>
+                <a href="file:///C:/Users/user/OneDrive/Desktop/Project%207th%20sem/RESTAURENT%20WEBSITE/streetfood.html" class="btn">order now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-9.jpg" alt="">
+            <div class="content1">
+                <h3>Chinese</h3>
+                <p>Chow Mein, Spring Rolls, Momos,Yangchow Fried Rice, Steamed Vermicelli Rolls, Dumplings etc.</p>
+                <a href="file:///C:/Users/user/OneDrive/Desktop/Project%207th%20sem/RESTAURENT%20WEBSITE/chinesecuisine.html" class="btn">order now</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> our customers <span>reviews</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/pic1.png" alt="">
+            <h3>Aashish Sharma</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>The delivery service was very time efficient. Food delivered within 30mins. Totally Impressed</p>
+        </div>
+        <div class="box">
+            <img src="images/pic2.png" alt="">
+            <h3>Monika Parmar</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>Every time i got my fevorite cuisine easily here. I just love Kanhu's Restaurent.</p>
+        </div>
+        <div class="box">
+            <img src="images/pic3.png" alt="">
+            <h3>Girish Sharma</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>The service and the staff are very impressive. Always happy to be here.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- order section starts  -->
+
+<section class="order" id="order">
+
+    <h1 class="heading"> <span>order</span> now </h1>
+
+    <div class="row">
+        
+        <div class="image">
+            <img src="images/order-img.jpg" alt="">
+        </div>
+
+        <form action="">
+
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="food name">
+            </div>
+
+            <textarea placeholder="address" name="" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="order now" class="btn">
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- order section ends -->
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="share">
+        <a href="https://www.facebook.com/profile.php?id=100026451994475" class="btn">facebook</a>
+        <a href="https://twitter.com/AartiSharma_5" class="btn">twitter</a>
+        <a href="https://www.instagram.com/aartisharma_5/" class="btn">instagram</a>
+        <a href="https://www.linkedin.com/in/aarti-sharma-5a2a43183/" class="btn">linkedin</a>
+    </div>
+
+    <h1 class="credit"> created by <span> Ms. Aarti Sharma </span> | all rights reserved! </h1>
+
+</section>
+
+<!-- scroll top button  -->
+<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+<!-- loader  -->
+<div class="loader-container">
+    <img src="images/loader.gif" alt="">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/responses.js"></script>
+<script src="js/chat.js"></script>
+
+</body>
+</html>
